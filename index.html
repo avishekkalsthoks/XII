@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chapter 1: Database Management System</h1>
+    <div id = "mcont">
+        <div class ="pcont" >Data <br>
+            <div class ="scont">Data is defined as a value or set of values representing a specific concept or concepts. Data become 'information' when analyzed and possibly combined with other data in order to extract meaning, and to provide context. The meaning of data can vary depending on its context.</div>
+            <div class = "type">Data Types
+                <div class = "scont">
+                    <ul>
+                        <li><p class = "bold">Numeric Data Types:</p>Numeric data types are fundamental to database design and are used to store numbers, whether they are integers, decimals, or floating-point numbers.</li>
+                        <li><p class = "bold">Character and String Data Types:</p>Character data types are used to store text or character-based data.</li>
+                        <li><p class = "bold">Date and Time Data Types:</p>SQL provides several data types for storing date and time information. They are essential for managing timestamps, events, and time-based queries.</li>
+                        <li><p class = "bold">Binary Data Types:</p>Binary data types are used to store binary data such as images, videos, or other file types.</li>
+                        <li><p class = "bold">Boolean Data Types:</p>The BOOLEAN data types are used to store logical values, typically TRUE or FALSE.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class ="pcont" >Database 
+            <div class ="scont">A database is an organized collection of data stored electronically. It allows users and applications to easily access, update, and manipulate information. This data contains text, numbers, images, videos and more. Databases are managed using specialized software known as a Database Management System (DBMS), which facilitates the storage, retrieval, and manipulation of data.</div>
+            <div class = "type"> Types of Database</div>
+                <div class = "scont">
+                    <ul>
+                        <li><p class = "bold">Relational Databases:</p>These databases organize data into tables with rows and columns, more like a spreadsheet. They use SQL to manage and query data. Accessing structured data is made most flexible and efficient by relational database technology. They ensure data is stored consistently and allow for complex queries, making them ideal for applications requiring structured data and relationships.
+
+<br>Examples: MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
+<br>Use Cases: E-commerce platforms, banking systems, and HR management.</li>
+                        <li><p class = "bold">NoSQL Databases:</p>These databases are designed to handle unstructured and semi-structured data. They do not use tables and SQL, instead store data in formats like documents, key-value pairs or graphs. They are highly scalable and flexible, making them ideal for real-time applications
+
+<br>Examples: MongoDB, Cassandra, DynamoDB.
+<br>Use Cases: Social media platforms, IoT applications and big data analytics.</li>
+                        <li><p class = "bold">Distributed Databases:</p>These databases are made up of two or more files that are spread across multiple locations or servers. They work together to provide a unified view of data. The database could be spread across many networks, housed in one physical place, or kept on several computers. They enhance performance and reliability by distributing data and workload across multiple servers.
+
+<br>Examples: Google Spanner, Apache Cassandra.
+<br>Use Cases: Global-scale applications, content delivery networks (CDNs).</li>
+                        <li><p class = "bold">Cloud databases:</p>A collection of organized or unorganized data that is housed on a private, public or hybrid cloud computing platform is known as a cloud database. They can be relational or NoSQL databases. They offer scalability, flexibility, and cost-efficiency. Here users can pay for what they use without maintaining physical hardware.
+
+<br>Examples: Amazon RDS, Google BigQuery, Microsoft Azure SQL Database.
+<br>Use Cases: SaaS applications, startups, and dynamic workloads.</li>
+                        <li><p class = "bold">Graph Databases:</p>These databases focus on the relationships between data objects. They use nodes (data entities) and edges (relationships) to model data. They efficiently handle complex relationships and are ideal for applications where connections between data points are crucial.
+
+<br>Examples: Neo4j, Amazon Neptune.
+<br>Use Cases: Social networks, recommendation engines, fraud detection.</li>
+                        <li><p class = "bold">Object-Oriented Databases:</p>The type of database that uses the object-based data model approach for storing data in the database system is called Object-Oriented Databases. The data is represented and stored as objects which are similar to the objects used in the object-oriented programming language. They are suitable for applications that require complex data representations and interactions.
+
+<br>Example: ObjectDB.
+<br>Use Case: CAD systems and multimedia applications.</li>
+                        <li><p class = "bold">Hierarchical Databases:</p>It is the type of database that stores data in the form of parent-children relationship nodes. Here, it organizes data in a tree-like structure. Data get stored in the form of records that are connected via links. Each child record in the tree will contain only one parent. They provide fast access to data with a known structure but can be inflexible when dealing with complex relationships.
+
+<br>Examples: IBM's Information Management System ( IMS)
+<br>Use Cases: Legacy systems, Applications with a clear parent-child relationship</li>
+                        <li><p class = "bold">Centralized Database:</p>It is the type of database that stores data at a centralized database system. It comforts the users to access the stored data from different locations through several applications. These applications contain the authentication process to let users access data securely. An example of a Centralized database can be Central Library that carries a central database of each library in a college/university.
+
+<br>Examples: Central library databases in universities
+<br>Use Cases: Educational institutions, Organizations with centralized data management</li>
+                
+                    </ul>
+                </div>
+        </div>
+        <div class ="pcont" >Database Management system
+            <div class ="scont">A DBMS is a system that allows users to create, modify, and query databases while ensuring data integrity, security, and efficient data access. Unlike traditional file systems, DBMS minimizes data redundancy, prevents inconsistencies, and simplifies data management with features like concurrent access and backup mechanisms. It organizes data into tables, views, schemas, and reports, providing a structured approach to data management.
+
+Example:
+A university database can store and manage student information, faculty records, and administrative data, allowing seamless retrieval, insertion, and deletion of information as required.</div>
+        </div>  
+        <div class = "type"> Types of DBMS</div>
+            <div class = "scont">
+                <ul>
+                    <li><p class = "bold">Relational Database Management System (RDBMS):</p>RDBMS organizes data into tables (relations) composed of rows and columns. It uses primary keys to uniquely identify rows and foreign keys to establish relationships between tables. Queries are written in SQL (Structured Query Language), which allows for efficient data manipulation and retrieval.
+
+<br>Examples: MySQL, Oracle, Microsoft SQL Server and Postgre SQL.</li>
+                    <li><p class = "bold"> NoSQL DBMS:</p>NoSQL systems are designed to handle large-scale data and provide high performance for scenarios where relational models might be restrictive. They store data in various non-relational formats, such as key-value pairs, documents, graphs, or columns. These flexible data models enable rapid scaling and are well-suited for unstructured or semi-structured data.
+
+<br>Examples: MongoDB, Cassandra, DynamoDB and Redis.</li>
+                    <li><p class = "bold">Object-Oriented DBMS (OODBMS)</p>OODBMS integrates object-oriented programming concepts into the database environment, allowing data to be stored as objects. This approach supports complex data types and relationships, making it ideal for applications requiring advanced data modeling and real-world simulations.
+
+<br>Examples: ObjectDB, db4o.</li>
+                </ul>
+            </div>
+        <div class ="pcont" >Software Development
+            <div class = "type">Database Design</div>
+            <div class ="scont">
+                Database Design can be defined as a set of procedures or collection of tasks involving various steps taken to implement a database.A good database design is important. It helps you get the right information when you need it. Following are some critical points to keep in mind to achieve a good database design:
+                <ol>
+                    <li>Data consistency and integrity must be maintained.</li>
+                    <li>Low Redundancy</li>
+                    <li>Faster searching through indices</li>
+                    <li>Security measures should be taken by enforcing various integrity constraints.</li>
+                    <li>Data should be stored in fragmented bits of information in the most atomic format possible.</li>
+                    </ol>
+            </div>
+            <div class = "type">Logical Data Model Design</div>
+            <div class = "scont">
+                <ol>
+                    <li>
+                        <p class = "bold">Data Models: </p>Data modeling is a visual modeling technique used to get a high-level overview of our database. Data models help us understand the needs and requirements of our database by defining the design of our database through diagrammatic representation. Ex: model, Network model, Relational Model, object-oriented data model.
+                    </li>
+                    <li><p class = "bold">Entity:</p> Entities are objects in the real world, which can have certain properties & these properties are referred to as attributes of that particular entity. There are 2 types of entities: Strong and weak entity, weak entity do not have a key attribute to identify them, their existence solely depends on one 1-specific strong entity & also have full participation in a relationship whereas strong entity does have a key attribute to uniquely identify them.
+                    </li>
+                    <li><p class = "bold">Relationships:</p>How data is logically related to each other defines the relationship of that data with other entities. In simple words, the association of one entity with another is defined here.
+
+A relationship can be further categorized into - unary, binary, and ternary relationships.
+
+<br>Unary: In this, the associating entity & the associated entity both are the same. Ex: Employee Manages themselves, and students are also given the post of monitor hence here the student themselves is a monitor.
+<br>Binary: This is a very common relationship that you will come across while designing a database.
+        <br>Ex: Student is enrolled in courses, Employee is managed by different managers, One student can be taught by many professors.
+<br>Ternary: In this, we have 3 entities involved in a single relationship. Ex: an employee works on a project for a client. Note that, here we have 3 entities: Employee, Project & Client. </li>
+                    <li><p class = "bold">Attributes:</p>Attributes are nothing but properties of a specific entity that define its behavior. For example, an employee can have unique_id, name, age, date of birth (DOB), salary, department, Manager, project id, etc.
+                    </li>
+                    <li><p class = "bold">Normalization:</p>After all the entities are put in place and the relationship among data is defined, we need to look for loopholes or possible ambiguities that may arise as a result of CRUD operations. To prevent various Anomalies such as INSERTION, UPDATION, and DELETION Anomalies.
+                    </li>
+                </ol>
+            </div>
+        </div> 
+        <div class ="pcont" >Database Adminstrator
+            <div class ="scont">A Database Administrator (DBA) is an individual or person responsible for controlling, maintaining, coordinating, and operating a database management system. Managing, securing, and taking care of the database systems is a prime responsibility. They are responsible and in charge of authorizing access to the database, coordinating, capacity, planning, installation, and monitoring uses, and acquiring and gathering software and hardware resources as and when needed. Their role also varies from configuration, database design, migration, security, troubleshooting, backup, and data recovery. Database administration is a major and key function in any firm or organization that is relying on one or more databases. They are overall commanders of the Database system.</div>
+        <div class = "type">Types of DBA</div>
+        <div class = "scont">
+            <ul>
+                <li><p class ="bold">Administrative DBA:</p>Their job is to maintain the server and keep it functional. They are concerned with data backups, security, troubleshooting, replication, migration, etc.</li>
+                <li><p class ="bold">Data Warehouse DBA:</p>Assigned earlier roles, but held accountable for merging data from various sources into the data warehouse. They also design the warehouse, with cleaning and scrubs data prior to loading.</li>
+                <li><p class ="bold">Cloud DBA:</p>Nowadays companies prefer to save their workpiece on cloud storage.  As it reduces the chance of data loss and provides an extra layer of data security and integrity.</li>
+                <li><p class ="bold">Development DBA:</p>They build and develop queries, store procedures, etc. that meet firm or organization needs.</li>
+                <li><p class ="bold">Application DBA:</p>They particularly manage all requirements of application components that interact with the database and accomplish activities such as application installation and coordination, application upgrades, database cloning, data load process management, etc.</li>
+                <li><p class ="bold">Architect:</p>They are held responsible for designing schemas like building tables. They work to build a structure that meets organizational needs. The design is further used by developers and development DBAs to design and implement real applications.
+</li>
+                <li><p class ="bold">OLAP DBA:</p> They design and build multi-dimensional cubes for determination support or OLAP systems.</li>
+                <li><p class ="bold">Data Modeler:</p>In general, a data modeler is in charge of a portion of a data architect's duties. A data modeler is typically not regarded as a DBA, but this is not a hard and fast rule.</li>
+                <li><p class ="bold">Task-Oriented DBA:</p>To concentrate on a specific DBA task, large businesses may hire highly specialised DBAs. They are quite uncommon outside of big corporations. Recovery and backup DBA, whose responsibility it is to guarantee that the databases of businesses can be recovered, is an example of a task-oriented DBA. However, this specialism is not present in the majority of firms. These task-oriented DBAs will make sure that highly qualified professionals are working on crucial DBA tasks when it is possible.</li>
+                <li><p class ="bold">Database Analyst:</p>This position doesn't actually have a set definition. Junior DBAs may occasionally be referred to as database analysts. A database analyst occasionally performs functions that are comparable to those of a database architect. The term "Data Administrator" is also used to describe database analysts and data analysts. Additionally, some businesses occasionally refer to database administrators as data analysts.</li>
+            </ul>
+        </div>
+        </div> 
+        <div class ="pcont" >Database Languages
+            <div class ="scont">Database languages are specialized sets of commands and instructions used to define, manipulate, and control data within a database. Each language type plays a distinct role in database management, ensuring efficient storage, retrieval, and security of data. The primary database languages include:
+                <ul>
+                    <li><p class="bold">Data Definition Language (DDL)</p>DDL is the short name for Data Definition Language, which deals with database schemas and descriptions, of how the data should reside in the database.
+
+<br><b>CREATE:</b> to create a database and its objects like (table, index, views, store procedure, function, and triggers)
+<br><b>ALTER:</b> alters the structure of the existing database
+<br><b>DROP:</b> delete objects from the database
+<br><b>TRUNCATE:</b> remove all records from a table, including all spaces allocated for the records are removed
+<br><b>COMMENT:</b> add comments to the data dictionary
+<br><b>RENAME:</b> rename an object</li>
+                    <li><p class="bold">Data Manipulation Language (DML)</p>
+                    DML focuses on manipulating the data stored in the database, enabling users to retrieve, add, update, and delete data.
+
+<br><b>SELECT:</b></li> retrieve data from a database
+<br><b>INSERT:</b> insert data into a table
+<br><b>UPDATE:</b> updates existing data within a table
+<br><b>DELETE:</b> Delete all records from a database table
+<br><b>MERGE:</b> UPSERT operation (insert or update)
+<br><b>CALL:</b> call a PL/SQL or Java subprogram
+<br><b>EXPLAIN PLAN:</b> interpretation of the data access path
+<br><b>LOCK TABLE:</b> concurrency Control</li>
+                    <li><p class="bold">Data Control Language (DCL)</p>
+                    DCL commands manage access permissions, ensuring data security by controlling who can perform certain actions on the database.
+
+<br><b>GRANT:</b></br> Provides specific privileges to a user (e.g., SELECT, INSERT).
+<br><b>REVOKE:</b></br> Removes previously granted permissions from a user.</li>
+                    <li><p class="bold">Transaction Control Language (TCL)</p>
+                    TCL commands oversee transactional data to maintain consistency, reliability, and atomicity.
+
+<br><b>ROLLBACK:</b> Undoes changes made during a transaction.
+<br><b>COMMIT:</b> Saves all changes made during a transaction.
+<br><b>SAVEPOINT:</b> Sets a point within a transaction to which one can later roll back.</li>
+                    <li><p class="bold">Data Query Language (DQL)</p>
+                    DQL is a subset of DML, specifically focused on data retrieval.
+
+<br><b>SELECT:</b> The primary DQL command, used to query data from the database without altering its structure or contents.</li>
+                </ul>
+            </div>
+            <div class = "pcont">CRUD Operation</div>
+            <div class = "scont">CRUD is the acronym for CREATE, READ, UPDATE and DELETE. These terms describe the four essential operations for creating and managing persistent data elements, mainly in relational and NoSQL databases.</div>
+            <div class = "2pcont">CREATE</div>
+            <div class = "scont">The CREATE operation adds a new record to a database. In RDBMS, a database table row is referred to as a record, while columns are called attributes or fields. The CREATE operation adds one or more new records with distinct field values in a table.
+
+The same principle applies to NoSQL databases. If the NoSQL database is document-oriented, then a new document (for example, a JSON formatted document with its attributes) is added to the collection, which is the equivalent of an RDBMS table. Similarly, in NoSQL databases like DynamoDB, the CREATE operation adds an item (which is equivalent to a record) to a table.</div>
+            <div class = "2pcont">READ</div>
+            <div class = "scont">READ returns records (or documents or items) from a database table (or collection or bucket) based on some search criteria. The READ operation can return all records and some or all fields.</div>
+            <div class = "2pcont">UPDATE</div>
+            <div class = "scont">UPDATE is used to modify existing records in the database. For example, this can be the change of address in a customer database or price change in a product database. Similar to READ, UPDATEs can be applied across all records or only a few, based on criteria.
+
+An UPDATE operation can modify and persist changes to a single field or to multiple fields of the record. If multiple fields are to be updated, the database system ensures they are all updated or not at all. Some big data systems don’t implement UPDATE but allow only a timestamped CREATE operation, adding a new version of the row each time.</div>
+            <div class = "2pcont">DELETE</div>
+            <div class = "scont">DELETE operations allow the user to remove records from the database. A hard delete removes the record altogether, while a soft delete flags the record but leaves it in place. For example, this is important in payroll where employment records need to be maintained even after an employee has left the company.</div>
+        </div>
+        <div class = "pcont">Keys in Database</div>
+        <div class = "scont">In the context of a relational database, Keys are one of the basic requirements of a relational database model. keys are fundamental components that ensure data integrity, uniqueness, and efficient access. It is widely used to identify the tuples(rows) uniquely in the table.
+We also use keys to set up relations amongst various columns and tables of a relational database.</div>
+        <div class = "type">Different types of Keys in Database</div>
+        <ol>
+        <li><p class ="bold">Super Key</p>
+        The set of one or more attributes (columns) that can uniquely identify a tuple (record) is known as Super Key. It may include extra attributes that aren't essential for uniqueness but still uniquely identify the row. For Example, STUD_NO, (STUD_NO, STUD_NAME), etc.
+            <ul><li>
+        A super key is a group of single or multiple keys that uniquely identifies rows in a table. It supports NULL values in rows.
+        </li>
+        <li>
+A super key can contain extra attributes that aren’t necessary for uniqueness. For example, if the "STUD_NO" column can uniquely identify a student, adding "SNAME" to it will still form a valid super key, though it's unnecessary.
+</li></ul>        
+<table><thead><tr><th><b><strong> STUD_NO </strong></b></th><th><b><strong> SNAME </strong></b></th><th><b><strong> ADDRESS </strong></b></th><th><b><strong> PHONE </strong></b></th></tr></thead><tbody><tr><td><span> 1 </span></td><td><span> Shyam </span></td><td><span> Delhi </span></td><td><span> 123456789 </span></td></tr><tr><td><span> 2 </span></td><td><span> Rakesh </span></td><td><span> Kolkata </span></td><td><span> 223365796 </span></td></tr><tr><td><span> 3 </span></td><td><span> Suraj </span></td><td><span> Delhi </span></td><td><span> 175468965 </span></td></tr></tbody></table>
+        A super key could be a combination of STUD_NO and PHONE, as this combination uniquely identifies a student.
+    <figure class="image"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20230314093236/keys-in-dbms.jpg" alt="Relation between Primary Key, Candidate Key and Super Key" width="1000" height="inherit"><figcaption>Relation between Primary Key, Candidate Key, and Super Key</figcaption></figure></li>
+    <li><p class ="bold">Candidate Key</p>
+        The minimal set of attributes that can uniquely identify a tuple is known as a candidate key.For Example, STUD_NO in STUDENT relation.
+        <ul><li value="1"><span>A candidate key is a minimal super key, meaning it can uniquely identify a record but contains no extra attributes.</span></li><li value="2"><span>It is a super key with no repeated data is called a candidate key.</span></li><li value="3"><span>The minimal set of attributes that can uniquely identify a record.</span></li><li value="4"><span>A candidate key must contain unique values, ensuring that no two rows have the same value in the candidate key’s columns.</span></li><li value="5"><span>Every table must have at least a single candidate key.</span></li><li value="6"><span>A table can have multiple candidate keys but only one primary key.</span></li></ul>
+        Example: For the STUDENT table below, STUD_NO can be a candidate key, as it uniquely identifies each record.
+        <table><thead><tr><th><b><strong> STUD_NO </strong></b></th><th><b><strong> SNAME </strong></b></th><th><b><strong> ADDRESS </strong></b></th><th><b><strong> PHONE </strong></b></th></tr></thead><tbody><tr><td><span> 1 </span></td><td><span> Shyam </span></td><td><span> Delhi </span></td><td><span> 123456789 </span></td></tr><tr><td><span> 2 </span></td><td><span> Rakesh </span></td><td><span> Kolkata </span></td><td><span> 223365796 </span></td></tr><tr><td><span> 3 </span></td><td><span> Suraj </span></td><td><span> Delhi </span></td><td><span> 175468965 </span></td></tr></tbody></table>
+        Table STUDENT_COURSE
+        <table><thead><tr><th><b><strong> STUD_NO </strong></b></th><th><b><strong> TEACHER_NO </strong></b></th><th><b><strong> COURSE_NO </strong></b></th></tr></thead><tbody><tr><td><span> 1 </span></td><td><span> 001 </span></td><td><span> C001 </span></td></tr><tr><td><span> 2 </span></td><td><span> 056 </span></td><td><span> C005 </span></td></tr></tbody></table>
+        A composite candidate key example: {STUD_NO, COURSE_NO} can be a candidate key for a STUDENT_COURSE table.
+    </li>
+<li><p class = "bold">Primary key</p>
+    There can be more than one candidate key in relation out of which one can be chosen as the primary key. For Example, STUD_NO, as well as STUD_PHONE, are candidate keys for relation STUDENT but STUD_NO can be chosen as the primary key (only one out of many candidate keys).
+<ul><li value="1"><span>A </span><b><strong>primary key</strong></b><span> is a </span><b><strong>unique key</strong></b><span>, meaning it can uniquely identify each record (tuple) in a table.</span></li><li value="2"><span>It must have </span><b><strong>unique values</strong></b><span> and cannot contain any </span><b><strong>duplicate</strong></b><span> values.</span></li><li value="3"><span>A </span><b><strong>primary key</strong></b><span> </span><b><strong>cannot be NULL</strong></b><span>, as it needs to provide a valid, unique identifier for every record.</span></li><li value="4"><span>A primary key does not have to consist of a single column. In some cases, a </span><b><strong>composite primary key</strong></b><span> (made of multiple columns) can be used to uniquely identify records in a table.</span></li><li value="5"><span>Databases typically store rows ordered in memory according to primary key for fast access of records using primary key.</span></li></ul>
+<b>Example</b>
+<span>STUDENT table -&gt; Student(STUD_NO, SNAME, ADDRESS, PHONE) , STUD_NO is a primary key  </span>
+<b>Table Student</b>
+<table><thead><tr><th><b><strong> STUD_NO </strong></b></th><th><b><strong> SNAME </strong></b></th><th><b><strong> ADDRESS </strong></b></th><th><b><strong> PHONE </strong></b></th></tr></thead><tbody><tr><td><span> 1 </span></td><td><span> Shyam </span></td><td><span> Delhi </span></td><td><span> 123456789 </span></td></tr><tr><td><span> 2 </span></td><td><span> Rakesh </span></td><td><span> Kolkata </span></td><td><span> 223365796 </span></td></tr><tr><td><span> 3 </span></td><td><span> Suraj </span></td><td><span> Delhi </span></td><td><span> 175468965 </span></td></tr></tbody></table>
+</li>
+<li><p class ="bold">Alternate Key</p>
+    An alternate key is any candidate key in a table that is not chosen as the primary key. In other words, all the keys that are not selected as the primary key are considered alternate keys.
+    <ul><li value="1"><span>An alternate key is also referred to as a </span><b><strong>secondary key</strong></b><span> because it can uniquely identify records in a table, just like the primary key.</span></li><li value="2"><span>An alternate key can consist of </span><b><strong>one or more columns</strong></b><span> (fields) that can uniquely identify a record, but it is not the primary key</span></li><li value="3"><span>Eg:- SNAME, and ADDRESS is Alternate keys</span></li></ul>
+    <b>Example:</b> In the STUDENT table, both STUD_NO and PHONE are candidate keys. If STUD_NO is chosen as the primary key, then PHONE would be considered an alternate key.
+    <figure class="image"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20230314093606/Primary-key-alternative-key-in-dbms.png" alt="Primary Key, Candidate Key and Alternate Key" width="1000" height="inherit" loading="lazy"><figcaption>Primary Key, Candidate Key, and Alternate Key</figcaption></figure>
+</li>
+<li><p class = "bold">
+Foreign Key
+</p>
+A foreign key is an attribute in one table that refers to the primary key in another table. The table that contains the foreign key is called the referencing table, and the table that is referenced is called the referenced table.
+<ul><li value="1"><span>A </span><b><strong>foreign key</strong></b><span> in one table points to the </span><b><strong>primary key</strong></b><span> in another table, establishing a relationship between them.</span></li><li value="2"><span>It helps </span><b><strong>connect two or more tables</strong></b><span>, enabling you to create relationships between them. This is essential for maintaining data integrity and preventing data redundancy.</span></li><li value="3"><span>They act as a cross-reference between the tables.</span></li><li value="4"><span>For example, DNO is a primary key in the DEPT table and a non-key in EMP</span></li></ul>
+<br>Example: Consider the STUDENT_COURSE table
+<table><thead><tr><th><b><strong> STUD_NO </strong></b></th><th><b><strong> TEACHER_NO </strong></b></th><th><b><strong> COURSE_NO </strong></b></th></tr></thead><tbody><tr><td><span> 1 </span></td><td><span> 005 </span></td><td><span> C001 </span></td></tr><tr><td><span> 2 </span></td><td><span> 056 </span></td><td><span> C005 </span></td></tr></tbody></table>
+<br>Here, STUD_NO in the STUDENT_COURSE table is a foreign key that references the STUD_NO primary key in the STUDENT table.
+<br><b>Explanation:</b>
+<ul><li value="1"><span>Unlike the Primary Key of any given relation, Foreign Key can be NULL as well as may contain duplicate tuples i.e. it need not follow uniqueness constraint.&nbsp;For Example, STUD_NO in the STUDENT_COURSE relation is not unique. </span></li><li value="2"><span>It has been repeated for the first and third tuples. However, the STUD_NO in STUDENT relation is a primary key and it needs to be always unique, and it cannot be null. </span></li></ul>
+</li>
+<li><p class = "bold">
+Composite Key    
+</p>
+Sometimes, a table might not have a single column/attribute that uniquely identifies all the records of a table. To uniquely identify rows of a table, a combination of two or more columns/attributes can be used. It still can give duplicate values in rare cases. So, we need to find the optimal set of attributes that can uniquely identify rows in a table.
+<ul><li value="1"><span>It acts as a primary key if there is no primary key in a table</span></li><li value="2"><span>Two or more attributes are used together to make a</span><a href="https://www.geeksforgeeks.org/composite-key-in-database/" target="_blank" rel="noopener"><span> composite key </span></a><span> . </span></li><li value="3"><span>Different combinations of attributes may give different accuracy in terms of identifying the rows uniquely.</span></li></ul>
+<br><b>Example:</b> In the STUDENT_COURSE table, {STUD_NO, COURSE_NO} can form a composite key to uniquely identify each record.
+<figure class="image"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20230314174012/Different-types-of-keys.png" alt="Different Types of Keys" width="1000" height="inherit" loading="lazy"><figcaption>Different Types of Keys</figcaption></figure>
+</li></ol>
+<div class ="pcont">Relational Constraints</div>
+<div class ="scont">These are the restrictions or sets of rules imposed on the database contents. It validates the quality of the database. It validates the various operations like data insertion, updation, and other processes that have to be performed without affecting the integrity of the data. It protects us against threats/damages to the database. Mainly Constraints on the relational database are of 4 types
+    <ul><li value="1"><span>Domain constraints</span></li><li value="2"><span>Key constraints or Uniqueness Constraints</span></li><li value="3"><span>Entity Integrity constraints</span></li><li value="4"><span>Referential integrity constraints</span></li></ul>
+    <figure class="image"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20230310175028/Constraints-on-Relational-Database-model.png" alt="Types of Relational Constraint" width="1000" height="inherit"><figcaption>Types of Relational Constraints</figcaption></figure>
+    <ol>
+        <li><p class = "bold">Domain Constraints</p>
+            <ul><li value="1"><span>Every domain must contain atomic values(smallest indivisible units) which means composite and multi-valued attributes are not allowed.</span></li><li value="2"><span>We perform a datatype check here, which means when we assign a data type to a column we limit the values that it can contain. Eg. If we assign the datatype of attribute age as int, we can't give it values other than int datatype.</span></li></ul>
+            <b>Example:</b> 
+            <table class="GFGEditorTheme__table"><colgroup><col><col><col></colgroup><thead><tr><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>EID &nbsp; &nbsp; &nbsp;</strong></b></th><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></b></th><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>Phone &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></b></th></tr></thead><tbody><tr><td class="GFGEditorTheme__tableCell"><span>01</span></td><td class="GFGEditorTheme__tableCell"><span>Bikash Dutta</span></td><td class="GFGEditorTheme__tableCell">
+
+<p><span>123456789</span></p>
+
+
+
+<p><span>234456678</span></p>
+
+</td></tr></tbody></table>
+            <b>Explanation:</b> In the above relation, Name is a composite attribute and Phone is a multi-values attribute, so it is violating domain constraint. 
+        </li>
+        <li><p class = "bold">
+            Key Constraints or Uniqueness Constraints</p>
+            <ul><li value="1"><span>These are called uniqueness constraints since it ensures that every tuple in the relation should be unique.</span></li><li value="2"><span>A relation can have multiple keys or candidate keys(minimal superkey), out of which we choose one of the keys as the primary key, we don’t have any restriction on choosing the primary key out of candidate keys, but it is suggested to go with the </span><a href="https://www.geeksforgeeks.org/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/" rel="noopener"><span>candidate key</span></a><span> with less number of attributes.</span></li><li value="3"><span>Null values are not allowed in the primary key, hence Not Null constraint is also part of the key constraint.</span></li></ul>
+            <b>Example:</b>
+                <table class="GFGEditorTheme__table"><colgroup><col><col><col></colgroup><thead><tr><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>EID &nbsp; &nbsp; &nbsp;</strong></b></th><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></b></th><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>Phone &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></b></th></tr></thead><tbody><tr><td class="GFGEditorTheme__tableCell"><span>01</span></td><td class="GFGEditorTheme__tableCell"><span>Bikash</span></td><td class="GFGEditorTheme__tableCell"><span>6000000009</span></td></tr><tr><td class="GFGEditorTheme__tableCell"><span>02</span></td><td class="GFGEditorTheme__tableCell"><span>Paul</span></td><td class="GFGEditorTheme__tableCell"><span>9000090009</span></td></tr><tr><td class="GFGEditorTheme__tableCell"><span>01</span></td><td class="GFGEditorTheme__tableCell"><span>Tuhin</span></td><td class="GFGEditorTheme__tableCell"><span>9234567892</span></td></tr></tbody></table>
+                
+            <b>Explanation:</b> In the above table, EID is the primary key, and the first and the last tuple have the same value in EID ie 01, so it is violating the key constraint. 
+
+        </li>
+        <li>
+            <p class = "bold"> Entity Integrity Constraints</p>
+            <ul><li value="1"><span>Entity Integrity constraints say that no primary key can take a NULL value, since using the </span><a href="https://www.geeksforgeeks.org/difference-between-primary-key-and-unique-key/" rel="noopener"><span>primary key</span></a><span> we identify each tuple uniquely in a &nbsp;relation.</span></li></ul>
+            <b>Example</b>
+            <table class="GFGEditorTheme__table"><colgroup><col><col><col></colgroup><thead><tr><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>EID &nbsp; &nbsp; &nbsp;&nbsp;</strong></b></th><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></b></th><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>Phone &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></b></th></tr></thead><tbody><tr><td class="GFGEditorTheme__tableCell"><span>01</span></td><td class="GFGEditorTheme__tableCell"><span>Bikash</span></td><td class="GFGEditorTheme__tableCell"><span>9000900099</span></td></tr><tr><td class="GFGEditorTheme__tableCell"><span>02</span></td><td class="GFGEditorTheme__tableCell"><span>Paul</span></td><td class="GFGEditorTheme__tableCell"><span>600000009</span></td></tr><tr><td class="GFGEditorTheme__tableCell"><span>NULL</span></td><td class="GFGEditorTheme__tableCell"><span>Sony</span></td><td class="GFGEditorTheme__tableCell"><span>9234567892</span></td></tr></tbody></table>
+            <b>Explanation:</b> In the above relation, EID is made the primary key, and the primary key can't take NULL values but in the third tuple, the primary key is null, so it is violating Entity Integrity constraints. 
+        </li>
+        <li>
+            <p class ="bold"> Referential Integrity Constraints</p>
+            <ul><li value="1"><span>The Referential integrity constraint is specified between two relations or tables and used to maintain the consistency among the tuples in two relations.</span></li><li value="2"><span>This constraint is enforced through a foreign key, when an attribute in the foreign key of relation R1 has the same domain(s) as the primary key of relation R2, then the foreign key of R1 is said to reference or refer to the primary key of relation R2.</span></li><li value="3"><span>The values of the foreign key in a tuple of relation R1 can either take the values of the primary key for some tuple in relation R2, or can take NULL values, but can't be empty.</span></li></ul>
+            <b>Example:</b>
+            <table class="GFGEditorTheme__table"><colgroup><col><col><col></colgroup><thead><tr><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>EID &nbsp; &nbsp; &nbsp;&nbsp;</strong></b></th><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>Name &nbsp; &nbsp; &nbsp; &nbsp;</strong></b></th><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>DNO &nbsp; &nbsp;&nbsp;</strong></b></th></tr></thead><tbody><tr><td class="GFGEditorTheme__tableCell"><span>01</span></td><td class="GFGEditorTheme__tableCell"><span>Divine</span></td><td class="GFGEditorTheme__tableCell"><span>12</span></td></tr><tr><td class="GFGEditorTheme__tableCell"><span>02</span></td><td class="GFGEditorTheme__tableCell"><span>Dino</span></td><td class="GFGEditorTheme__tableCell"><span>22</span></td></tr><tr><td class="GFGEditorTheme__tableCell"><span>04</span></td><td class="GFGEditorTheme__tableCell"><span>Vivian</span></td><td class="GFGEditorTheme__tableCell"><span>14</span></td></tr></tbody></table>
+            <table class="GFGEditorTheme__table"><colgroup><col><col></colgroup><thead><tr><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>DNO &nbsp; &nbsp; &nbsp;&nbsp;</strong></b></th><th class="GFGEditorTheme__tableCell GFGEditorTheme__tableCellHeader"><b><strong>Place &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></b></th></tr></thead><tbody><tr><td class="GFGEditorTheme__tableCell"><span>12</span></td><td class="GFGEditorTheme__tableCell"><span>Jaipur</span></td></tr><tr><td class="GFGEditorTheme__tableCell"><span>13</span></td><td class="GFGEditorTheme__tableCell"><span>Mumbai</span></td></tr><tr><td class="GFGEditorTheme__tableCell"><span>14</span></td><td class="GFGEditorTheme__tableCell"><span>Delhi</span></td></tr></tbody></table>
+            <b>Explanation:</b> In the above tables, the DNO of Table 1 is the foreign key, and DNO in Table 2 is the primary key. DNO = 22 in the foreign key of Table 1 is not allowed because DNO = 22 is not defined in the primary key of table 2. Therefore, Referential integrity constraints are violated here.
+        </li>
+    </ol>
+    <div class = "pcont">Anomalies in Database</div>
+    <div class= = "mcont">
+        Anomalies in the relational model refer to inconsistencies or errors that can arise when working with relational databases, specifically in the context of data insertion, deletion, and modification. There are different types of anomalies that can occur in referencing and referenced relations which can be discussed as:  
+
+These anomalies can be categorized into three types:
+<ul><li value="1"><span>Insertion Anomalies</span></li><li value="2"><span>Deletion Anomalies</span></li><li value="3"><span>Update Anomalies.</span></li></ul>
+<ul><li value="1"><b><strong>Insertion Anomalies: </strong></b><span>These anomalies occur when it is not possible to insert data into a database because the required fields are missing or because the data is incomplete. For example, if a database requires that every record has a </span><a href="https://www.geeksforgeeks.org/postgresql-primary-key/" rel="noopener"><span>primary key</span></a><span>, but no value is provided for a particular record, it cannot be inserted into the </span><a href="https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/" rel="noopener"><span>database</span></a><span>.</span></li><li value="2"><b><strong>Deletion anomalies:</strong></b><span> These anomalies occur when deleting a record from a database and can result in the unintentional loss of data. For example, if a database contains information about customers and orders, deleting a customer record may also delete all the orders associated with that customer.</span></li><li value="3"><b><strong>Update anomalies:&nbsp;</strong></b><span> These anomalies occur when modifying data in a database and can result in inconsistencies or errors. For example, if a database contains information about employees and their salaries, updating an employee's salary in one record but not in all related records could lead to incorrect calculations and reporting.</span></li></ul>
+    </div>
+    
+    </div>
+
+</div>
+
+    
+    
+</body>
+</html>
